@@ -1,5 +1,5 @@
 {% set name = "tilupy" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tilupy-{{ version }}.tar.gz
-  sha256: cd9f8dd0416b12d80cf8337a8a4ae5b084607122546b25e7eb52d96729bb6d99
+  sha256: de6d52578a54c2dfdd463887d54842220ecf981c0383f346ad5295214d52bec7
 
 build:
   entry_points:
@@ -15,7 +15,7 @@ build:
     - tilupy_to_raster = tilupy.cmd:_tilupy_to_raster
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
