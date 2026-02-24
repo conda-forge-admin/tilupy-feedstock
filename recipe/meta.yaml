@@ -1,5 +1,5 @@
 {% set name = "tilupy" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tilupy-{{ version }}.tar.gz
-  sha256: de6d52578a54c2dfdd463887d54842220ecf981c0383f346ad5295214d52bec7
+  sha256: 8b8caf12cb20ca28ddfb3b20705232ed925c4c5da53bd4f90fcef61a9109b01d
 
 build:
   entry_points:
